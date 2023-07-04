@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    
+
+</head>
+
+<body onload="fetchIp()">
+    <div id="main-div">
+        <div id="title-ip">
+            <h1>My Public IP Address is:</h1>
+            <p id="ipAdress"></p>
+        </div>
+        <div id="button">
+            <button onclick="toggleOnClickDiv()">Get Data</button>
+        </div>
+    </div>
+
+    <div id="onclick-div">
+        <div id="onclick-div-info">
+        </div>
+        <div id="onclick-div-map">
+            <iframe width="99%" height="400px"
+            frameborder="0"></iframe>
+        </div>
+        <div id="onclick-div-timeZoneAndAll">
+            <p id="timezone">Time Zone:<span></span></p>
+            <p id="date-time">Date/Time:<span></span></p>
+            <p id="pincode">Pincode:<span></span></p>
+            <p id="message">Message:<span></span></p>
+        </div>
+        <input type="text" placeholder="Search post office by name">
+        <div id="onclick-div-displayPostOffice">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

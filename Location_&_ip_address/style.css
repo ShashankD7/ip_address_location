@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#main-div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: start;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+div#title-ip {
+    display: flex;
+    align-items: center;
+}
+
+div#title-ip h1 {
+    padding-right: 30px;
+}
+
+div#title-ip p {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+div#main-div button {
+    width: 15vw;
+    height: 4vh;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+div#main-div button:hover {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+div#map {
+    height: 400px;
+    width: 100%;
+}
+
+div#onclick-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+}
+
+div#onclick-div-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    padding-left: 20px;
+}
+
+div#onclick-div-map {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 90%;
+}
+
+div#onclick-div-timeZoneAndAll {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px 0;
+    margin-left: 20px;
+    width: 90%;
+}
+
+div#onclick-div-displayPostOffice {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* div#onclick-div-displayPostOffice div#post-office-item {
+    width: 20vw;
+    border: "2px solid black";
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+} */
+
+p#timezone, p#date-time, p#pincode, p#message {
+    font-size: 20px;
+    font-weight: 600;
+}
+p#timezone span, p#date-time span, p#pincode span, p#message span {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+div#onclick-div input {
+    width: 90%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 30px;
+}
